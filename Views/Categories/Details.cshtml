@@ -1,0 +1,43 @@
+﻿@model Assignment.Models.Category
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Category</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.cost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.planes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.planes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cranes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cranes)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.trucks }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
